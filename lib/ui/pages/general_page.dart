@@ -26,7 +26,7 @@ class GeneralPage extends StatelessWidget {
           ),
           SafeArea(
             child: Container(
-              color: backColor ?? 'FAFAFC'.toColor(),
+              color: backColor ?? Colors.white,
             ),
           ),
           SafeArea(
@@ -35,7 +35,6 @@ class GeneralPage extends StatelessWidget {
                 Column(
                   children: [
                     Container(
-                      margin: EdgeInsets.only(bottom: 24),
                       padding: EdgeInsets.symmetric(
                         horizontal: defaultMargin,
                       ),
@@ -79,6 +78,11 @@ class GeneralPage extends StatelessWidget {
                           )
                         ],
                       ),
+                    ),
+                    Container(
+                      height: defaultMargin,
+                      width: double.infinity,
+                      color: "FAFAFC".toColor(),
                     ),
                     child ?? SizedBox(),
                   ],
